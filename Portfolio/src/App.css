@@ -1,0 +1,376 @@
+/* General Layout */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+  background-color: #fff;
+  color: #333;
+}
+
+.app {
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #f9fafb; /* Light gray background */
+  color: #333;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color:#374151;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.navbar-links a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+  color: #6366f1; /* Indigo on hover */
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .navbar-links a {
+    padding: 10px 0;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .navbar-links a {
+    padding: 10px 0;
+  }
+}
+
+
+/* hero */
+.hero {
+  padding: 4rem 1rem;
+  background: linear-gradient(to bottom right, #fcefee, #e3f2fd);
+  text-align: center;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero-content img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.hero-text h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.hero-text small {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.hero-text p {
+  max-width: 600px;
+  margin: 0 auto 1rem;
+  color: #444;
+}
+
+.hero-button {
+  background: #facc15;
+  color: #1e3a8a;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  display: inline-block;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.hero-button:hover {
+  background: #fde68a;
+}
+
+@media (min-width: 768px) {
+  .hero-content {
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+  }
+
+  .hero-text {
+    max-width: 500px;
+    text-align: left;
+  }
+}
+
+
+/* Skills */
+
+.skills {
+  padding: 4rem 1rem;
+  background: linear-gradient(to bottom right, #f9fafb, #f3f4f6);
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  color: #1f2937;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.skill-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #e5e7eb;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.skill-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 0.75rem;
+}
+
+.skill-card p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #374151;
+  margin: 0;
+}
+
+
+
+
+/* Projects */
+
+.projects {
+  padding: 4rem 1rem;
+  background-color: #f9fafb;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  color: #1f2937;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 1rem 1rem 0.5rem;
+  color: #111827;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  color: #4b5563;
+  margin: 0 1rem 1rem;
+  line-height: 1.5;
+}
+
+.project-card a {
+  margin: 0 1rem 1.25rem;
+  color: #2563eb;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.project-card a:hover {
+  color: #1d4ed8;
+}
+
+/* Contact */
+.contact {
+  background-color: #f5f7fa;
+  padding: 60px 20px;
+  text-align: center;
+  border-top: 1px solid #e0e0e0;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.contact p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-links a {
+  background-color: #0077b5; /* LinkedIn blue */
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.contact-links a:nth-child(2) {
+  background-color: #333; /* GitHub black */
+}
+
+.contact-links a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .contact h2 {
+    font-size: 2rem;
+  }
+
+  .contact-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+/* Footer */
+.footer {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+  text-align: center;
+  padding: 20px 15px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border-top: 1px solid #333;
+}
+
+.footer span {
+  color: #ff4d5a; /* heart color */
+}
+
+@media (max-width: 600px) {
+  .footer {
+    font-size: 0.85rem;
+    padding: 15px 10px;
+  }
+}
+
