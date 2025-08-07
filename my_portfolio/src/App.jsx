@@ -8,17 +8,7 @@ function App() {
     <div className="app">
 
       {/* navbar */}
-      
-       {/* <nav className="navbar">
-      <div className="navbar-brand">Regoju Anjaneya Chary</div>
-      <ul className="navbar-links">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav> */}
-      
+            
     <Navbar/>
 
 
@@ -86,19 +76,19 @@ function App() {
             <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80" alt="FoodieGo" />
             <h3>🍽️ FoodieGo – Food Delivery App</h3>
             <p>React + Firebase app for browsing restaurants, adding to cart, and placing orders.</p>
-            <a href="#">Live Demo</a>
+            <a href="#" target="_blank">Live Demo</a>
           </div>
           <div className="project-card">
             <img src="https://images.pexels.com/photos/13553844/pexels-photo-13553844.jpeg?auto=format&fit=crop&w=800&q=80" alt="TimeTales" />
             <h3>📦 TimeTales – Time Capsule App</h3>
             <p>Create multimedia time capsules that open in the future. Built with Firebase Firestore & Auth.</p>
-            <a href="https://regojuanjaneyachary.github.io/Javascript_Practice/JsProject_TimeTales/landingpage.html">Live Demo</a>
+            <a href="https://regojuanjaneyachary.github.io/Javascript_Practice/JsProject_TimeTales/landingpage.html" target="_blank">Live Demo</a>
           </div>
           <div className="project-card">
-            <img src="https://images.pexels.com/photos/2589457/pexels-photo-2589457.jpeg?auto=format&fit=crop&w=800&q=80" alt="AgriView" />
+            <img src="https://images.pexels.com/photos/2589457/pexels-photo-2589457.jpeg?auto=format&fit=crop&w=800&q=80" alt="AgriView"  />
             <h3>🌾 AgriView – Agriculture Responsive CSS Website</h3>
             <p>A responsive HTML & CSS website promoting smart farming, sustainability, and rural innovation.</p>
-            <a href="https://regojuanjaneyachary.github.io/Projects/css_website/website.html">Live Demo</a>
+            <a href="https://regojuanjaneyachary.github.io/Projects/css_website/website.html" target="_blank">Live Demo</a>
           </div>
         </div>
       </section>
@@ -108,8 +98,8 @@ function App() {
         <h2>Let's Connect</h2>
         <p>Looking for internships, freelance, or full-time roles. Drop a message below!</p>
         <div className="contact-links">
-          <a href="https://www.linkedin.com/in/regoju-anjaneya-chary/">LinkedIn</a>
-          <a href="https://github.com/RegojuAnjaneyaChary">GitHub</a>
+          <a href="https://www.linkedin.com/in/regoju-anjaneya-chary/" target="_blank">LinkedIn</a>
+          <a href="https://github.com/RegojuAnjaneyaChary" target="_blank">GitHub</a>
         </div>
       </section>
 
